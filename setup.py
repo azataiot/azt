@@ -8,7 +8,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='azt',
-    version='0.0.5',
+    version='0.0.6',
     description="~azt is an intelligent hybrid progressive programming language",
     long_description=long_description,
     long_description_content_type='text/markdown',
