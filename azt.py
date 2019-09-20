@@ -1,8 +1,10 @@
 import click
 from pyfiglet import Figlet
-
+import subprocess
+import pkg_resources
 
 azt_copyright = '❤ ©Azat Artificial Intelligence, LLP\nAl-Farabi Kazakh National University'
+update_message = ''
 
 
 @click.command()
@@ -10,5 +12,6 @@ azt_copyright = '❤ ©Azat Artificial Intelligence, LLP\nAl-Farabi Kazakh Natio
 def cli():
     f = Figlet()
     azt_welcome = f.renderText('AzatAI')
+    subprocess.run(['pip', 'install', '--upgrade', 'azt'])
     click.secho(azt_welcome, fg='blue')
     click.echo(azt_copyright)
