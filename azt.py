@@ -12,6 +12,6 @@ update_message = ''
 def cli():
     f = Figlet()
     azt_welcome = f.renderText('AzatAI')
-    subprocess.run(['pip', 'install', '--upgrade', 'azt'])
+    # subprocess.run(['pip', 'install', '--upgrade', 'azt'])
     click.secho(azt_welcome, fg='blue')
     click.echo(azt_copyright)
