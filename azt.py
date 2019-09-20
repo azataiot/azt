@@ -1,15 +1,11 @@
 import click
 from pyfiglet import Figlet
 
-
-@click.group()
-def cli():
-    pass
+f = Figlet()
+azt_welcome = f.renderText('AzatAI')
 
 
 @click.command()
-def init():
-    click.secho('init')
-
-
-cli.add_command(init)
+@click.version_option()
+def cli():
+    click.secho(azt_welcome, fg='blue')
