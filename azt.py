@@ -2,7 +2,7 @@ import click
 from pyfiglet import Figlet
 
 
-azt_copyright = '©Azat Artificial Intelligence, LLP\nAl-Farabi Kazakh National University'
+azt_copyright = '❤ ©Azat Artificial Intelligence, LLP\nAl-Farabi Kazakh National University'
 
 
 @click.command()
