@@ -3,7 +3,9 @@
 # Edit at https://www.gitignore.io/?templates=vue,node,java,vuejs,linux,macos,fancy,flask,python,django,windows,pycharm+all,webstorm+all,flashbuilder,visualstudiocode
 
 ### AzatAI ~azt Development Utils ###
+./up2pi.py
 up2pi.py
+/up2pi
 ### Django ###
 *.log
 *.pot
