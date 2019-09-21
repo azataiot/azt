@@ -3,7 +3,7 @@ from pyfiglet import Figlet
 import subprocess
 import pkg_resources
 
-azt_copyright = '❤ ©Azat Artificial Intelligence, LLP\nAl-Farabi Kazakh National University'
+azt_copyright = '❤ Azat Artificial Intelligence, LLP\n...Science and Technology Park of...\nAl-Farabi Kazakh National University'
 update_message = ''
 
 
