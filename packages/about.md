@@ -1,1 +1,0 @@
-this would be a parallel python package as the core azt package.
