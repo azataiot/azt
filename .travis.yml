@@ -8,7 +8,7 @@ before_install:
   - python -m pip install --upgrade pip
 #env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
 install:
-  - pip install -r requirements.txt
+  - pip3 install -r requirements.txt
 script:
   - bash -c echo "AzatAI azt With Travis"
 before_deploy:
