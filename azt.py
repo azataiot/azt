@@ -11,7 +11,7 @@ def cli():
 
 @cli.command()  # @cli, not @click!
 def git():
-    click.secho('Running the ~azt Github utils:..', bg='white', fg='blue')
+    click.secho('Running the ~azt Github utils:..', fg='blue')
     github.git()
     click.secho('~azt:Done!', bg='white', fg='green')
 
