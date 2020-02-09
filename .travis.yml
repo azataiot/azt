@@ -22,3 +22,5 @@ deploy:
   draft: true
   on:
     tags: true
+    repo: yaakovazat/azt
+    branch: master
