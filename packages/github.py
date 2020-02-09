@@ -36,7 +36,7 @@ def git():
             sys.exit('Nothing to commit')
     else:
         click.secho(
-            'ERROR:'
+            'ERROR:\n'
             'Not a valid git repository root, are you in the root directory of the project where the .git file '
             'located?',
             bg='white', fg='red')
