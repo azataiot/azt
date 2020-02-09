@@ -2,6 +2,7 @@ import codecs
 import os
 import sys
 import subprocess
+import click
 
 
 def git():
@@ -9,6 +10,8 @@ def git():
     TODO:
     2. Check the user configurations of git repository.
     3. [TOC] don't work in github, so change something with hand.
+    4. have to check weather we need some staff for example we may need --tag
+    5. how about user can change push to which branch?
     :return:
     """
     # Check git repository existence
@@ -32,4 +35,8 @@ def git():
         else:
             sys.exit('Nothing to commit')
     else:
-        sys.exit('Not a valid git repository')
+        click.secho(
+            '～azt：Not a valid git repository root, are you in the root directory of the project where the .git file '
+            'located?',
+            bg='white', fg='red')
+        sys.exit()
