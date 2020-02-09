@@ -1,5 +1,4 @@
 from datetime import datetime
-from art import text2art, tsave
 import click
 
 AZATAI_TEXT = """
