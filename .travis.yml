@@ -19,8 +19,8 @@ deploy:
   file_glob: true
   file: dist/*.exe
   skip_cleanup: true
-  draft: true
+  draft: false
   on:
-    tags: true
+    tags: false
     repo: yaakovazat/azt
     branch: master
