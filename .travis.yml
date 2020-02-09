@@ -1,13 +1,16 @@
-os: windows
+os:
+  - windows
+#  - linux
+#  - osx
 language: shell
 before_install:
   - choco install python --version=3.7
   - python -m pip install --upgrade pip
-env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
+#env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
 install:
   - pip install -r requirements.txt
 script:
-  - bash -c echo "Tests would go here"
+  - bash -c echo "AzatAI azt With Travis"
 before_deploy:
   - pyinstaller azt.py --onefile
 deploy:
