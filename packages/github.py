@@ -1,5 +1,6 @@
 import codecs
 import os
+import sys
 import subprocess
 
 
@@ -26,9 +27,9 @@ def git():
             os.system(f'git commit -m "{comment_message}"')
             print('Pushing changes to Github')
             os.system('git push origin master')
-            exit(0)
+            sys.exit(0)
             # exit after pushing changes to Github.
         else:
-            exit('Nothing to commit')
+            sys.exit('Nothing to commit')
     else:
-        exit('Not a valid git repository')
+        sys.exit('Not a valid git repository')
