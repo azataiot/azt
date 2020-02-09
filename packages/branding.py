@@ -25,3 +25,4 @@ def run():
     click.secho('https://azat.ai', nl=False)
     click.secho('        ', nl=False)
     click.secho('info@azat.ai')
+    click.secho()
